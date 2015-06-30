@@ -19,7 +19,6 @@ class Siskel
     else
 	    @title = movie["Title"]
 	    @actor = movie["Actors"].split(", ")
-	    # @actor = @actor
 	    @rating = movie["Rated"]
 	    @year = movie["Year"]
 	    @plot = movie["Plot"]
