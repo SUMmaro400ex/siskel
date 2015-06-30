@@ -22,9 +22,9 @@ class Siskel
 	    @rating = movie["Rated"]
 	    @year = movie["Year"]
 	    @plot = movie["Plot"]
-	    tomatoes = movie["tomatoUserMeter"].to_i
-	    if tomatoes > 75 && tomatoes < 101
-	    	@concensus = "Two Thumbs Up"
+	    tomatoes = movie["tomatoMeter"].to_i
+	    if tomatoes < 76 && tomatoes > 50
+	    	@concensus = "Thumbs Up"
 	    end
 
 	    if tomatoes < 51 && tomatoes > 25

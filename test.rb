@@ -45,7 +45,7 @@ class TestSiskel < Minitest::Test
   
   def test_movie_concensus_positive
     movie = Siskel.new("The Fifth Element")
-    assert_equal "Two Thumbs Up", movie.concensus
+    assert_equal "Thumbs Up", movie.concensus
   end
 
   def test_movie_concensus_negative
